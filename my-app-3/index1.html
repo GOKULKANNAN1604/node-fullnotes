@@ -1,0 +1,32 @@
+<html>
+   <body>
+      <script type = "text/javascript">  
+         function myfunction() {   
+         //alert("how are you");  
+         let body={weight:document.getElementById('weight').value,height:document.getElementById('height').value}
+         
+         console.log(body)
+fetch("http://127.0.0.1:8083/process_post",{
+    method: 'POST',
+   headers :{ "content-type":'application/json'},
+    body:JSON.stringify(body)
+    // *GET, POST, PUT, DELETE, etc.})
+
+                  }  ).then(data=>{
+                    return data.json()
+                  }).then(data1=>{ console.log(JSON.stringify(data1) )
+                  document.getElementById("rk").innerHTML=data1
+
+                  })}
+         </script>  
+
+<!--        
+      <form target="_parent" action = "http://127.0.0.1:8083/process_post" method = "post" > -->
+         enter your height: <input type = "text" name = "height" id="height">  <br>
+         enter your weight: <input type = "text" name = "weight" id="weight"><br>
+         <input type = "submit" value = "Submit" onclick='myfunction()'>
+         <div id="rk"></div>
+      <!-- </form>
+       -->
+   </body>
+</html>

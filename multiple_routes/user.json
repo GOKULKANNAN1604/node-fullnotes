@@ -1,0 +1,21 @@
+{
+   "users":[
+    {
+        "name": "gokul",
+        "password":"12345" 
+    },
+    {
+        "name": "ramash",
+        "password":"12345" 
+    },
+    {
+        "name": "mani",
+        "password":"12345" 
+    },
+    {
+        "name": "sasi",
+        "password":"12345" 
+    }
+
+   ]
+}
