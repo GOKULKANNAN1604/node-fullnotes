@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Simple Calculator Application</h1>
+    <form action="/result" method="post">
+      <label for="first_num">First number:</label>
+      <input type="text" id="first_num" name="first_num" required> <br>
+      <label for="second_num">Second number:</label>
+      <input type="text" id="second_num" name="second_num" required><br>
+
+      <input type="button" id="operator+" name="operator+" value="+">
+      <input type="button" id="operator-" name="operator-" value="-">
+      <input type="button" id="operator*" name="operator*" value="*">
+      <input type="button" id="operator/" name="operator/" value="/">
+      <!-- <label for="operator">Operator:</label>
+      <select id="operator" name="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <button type="submit">Calculate</button> -->
+    </form>
+  </body>
+</html>
