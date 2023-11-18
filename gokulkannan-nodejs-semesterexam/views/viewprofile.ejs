@@ -1,0 +1,23 @@
+<!-- viewprofile.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+</head>
+<body>
+  <% if (user) { %>
+    <h1>User Profile</h1>
+    <h2>Name: <%= user.name %></h2>
+    <p>Email: <%= user.email %></p>
+    <p>Register Number: <%= user.registernumber %></p>
+    <p>Course: <%= user.course %></p>
+    <p>Batch: <%= user.batch %></p>
+  <% } else { %>
+    <p>User not found.</p>
+  <% } %>
+  <a href="/">Back to Home</a>
+</body>
+</html>
